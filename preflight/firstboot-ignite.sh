@@ -13,6 +13,12 @@ Wants=network.target
 Type=oneshot
 WorkingDirectory=/opt/arch-installer
 ExecStart=/opt/arch-installer/firstboot.sh
+StandardOutput=journal+console
+StandardError=journal+console
+TTYPath=/dev/console
+TTYReset=yes
+TTYVHangup=yes
+TTYVTDisallocate=yes
 RemainAfterExit=yes
 [Install]
 WantedBy=multi-user.target
