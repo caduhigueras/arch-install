@@ -33,7 +33,7 @@ fi
 require() { command -v "$1" >/dev/null 2>&1 || { echo "Missing dependency: $1" >&2; exit 1; }; }
 
 # Clone project
-git clone git@github.com:caduhigueras/arch-install.git /root/arch-installer
+git clone https://github.com/caduhigueras/arch-install.git /root/arch-installer
 
 cd /root/arch-installer
 
