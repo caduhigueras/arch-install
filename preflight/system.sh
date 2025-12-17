@@ -9,7 +9,7 @@ echo "Install base system"
 
 pacstrap -K /mnt base linux-lts linux-firmware
 
-touch /etc/vconsole.conf
+arch-chroot /mnt touch /etc/vconsole.conf
 
 echo "Generate swapfile"
 arch-chroot /mnt bash -c 'mkswap -U clear --size 32G --file /swapfile && swapon /swapfile'
