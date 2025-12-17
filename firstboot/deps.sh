@@ -7,5 +7,5 @@ sudo pacman -Syy --noconfirm
 git clone https://aur.archlinux.org/yay.git ~/.local/share/yay
 cd ~/.local/share/yay
 makepkg -si
-
-sudo pacman -S --noconfirm --needed bat blueman bluez bluez-utils cairo cronie dunst evince feh gum make nautilus nwg-look poppler-glib protobuf pv reflector ripgrep rsync satty sof-firmware stow systat uwsm waybar wl-clipboard 
+# cronie 
+sudo pacman -S --noconfirm --needed bat blueman bluez bluez-utils cairo dunst evince feh gum make nautilus nwg-look poppler-glib protobuf pv reflector ripgrep rsync satty sof-firmware stow systat uwsm waybar wl-clipboard 
