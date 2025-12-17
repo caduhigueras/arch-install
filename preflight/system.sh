@@ -3,7 +3,7 @@
 echo "Sorting mirrors bsaed on location"
 pacman -Syy
 pacman -S --noconfirm --needed reflector
-reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
+reflector --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
 
 echo "Install base system"
 
