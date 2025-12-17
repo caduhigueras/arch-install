@@ -3,7 +3,6 @@
 source /opt/arch-installer/firstboot/deps.sh
 source /opt/arch-installer/firstboot/audio.sh
 source /opt/arch-installer/firstboot/elephant.sh
-source /opt/arch-installer/firstboot/obsidian.sh
 source /opt/arch-installer/firstboot/browsers.sh
 source /opt/arch-installer/firstboot/neovim.sh
 source /opt/arch-installer/firstboot/gtk.sh
