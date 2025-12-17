@@ -9,6 +9,8 @@ echo "Install base system"
 
 pacstrap -K /mnt base linux-lts linux-firmware
 
+touch /etc/vconsole.conf
+
 echo "Generate swapfile"
 arch-chroot /mnt bash -c 'mkswap -U clear --size 32G --file /swapfile && swapon /swapfile'
 
@@ -18,7 +20,6 @@ genfstab -U /mnt >> /mnt/etc/fstab
 echo "Install initial dependencies and libraries"
 arch-chroot /mnt bash -c 'pacman -S --noconfirm --needed vim nano sudo iwd dhcpcd git base-devel networkmanager'
 
-touch /etc/vconsole.conf
 
 # Intel or AMD
 CPU_VENDOR="$(awk -F: '/vendor_id/ {gsub(/^[ \t]+/, "", $2); print $2; exit}' /proc/cpuinfo)"
