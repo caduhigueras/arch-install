@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-source ./preflight/prepareenv.sh
 source ./preflight/disks.sh
 source ./preflight/system.sh
 source ./preflight/bootmanager.sh
