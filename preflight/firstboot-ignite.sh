@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cp -a /root/arch-installer /mnt/opt/arch-installer
+
 arch-chroot /mnt bash -c 'cat > /etc/systemd/system/firstboot-setup.service << "EOF"
 [Unit]
 Description=Run first boot setup once
