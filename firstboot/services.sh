@@ -5,3 +5,5 @@ sudo systemctl enable bluetooth
 sudo systemctl enable cronie.service
 sudo systemctl start cronie.service
 systemctl --user enable --now hypridle.service
+
+sudo rm -f "/etc/sudoers.d/99-$USER-nopasswd"

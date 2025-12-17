@@ -24,3 +24,8 @@ RemainAfterExit=yes
 WantedBy=multi-user.target
 EOF
 systemctl enable firstboot-setup.service'
+
+echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" \
+  | arch-chroot /mnt tee "/etc/sudoers.d/99-$USER-nopasswd" >/dev/null
+
+arch-chroot /mnt chmod 0440 "/etc/sudoers.d/99-$USER-nopasswd"
