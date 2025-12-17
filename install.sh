@@ -18,6 +18,7 @@ PACMAN_PKGS=(
   parted       # partprobe (sometimes provided by util-linux too; harmless)
   e2fsprogs    # mkfs.ext4
   dosfstools   # mkfs.fat
+  rsync
 )
 
 # Install official repo packages (quiet download output, no prompts, only if missing)
