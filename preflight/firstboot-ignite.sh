@@ -11,6 +11,7 @@ After=network.target
 Wants=network.target
 [Service]
 Type=oneshot
+WorkingDirectory=/opt/arch-installer
 ExecStart=/opt/arch-installer/firstboot.sh
 RemainAfterExit=yes
 [Install]
