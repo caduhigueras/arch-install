@@ -12,7 +12,7 @@ Wants=network.target
 [Service]
 Type=oneshot
 WorkingDirectory=/opt/arch-installer
-ExecStart=/opt/arch-installer/firstboot.sh
+ExecStart=/opt/arch-installer/firstbootxxx.sh
 StandardOutput=journal+console
 StandardError=journal+console
 TTYPath=/dev/console
