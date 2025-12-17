@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 echo "Sorting mirrors bsaed on location"
+pacman -Syy
 pacman -S --noconfirm --needed reflector
 reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 
 echo "Install base system"
-pacman -Syy
 
 pacstrap -K /mnt base linux-lts linux-firmware
 
