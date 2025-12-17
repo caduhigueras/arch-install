@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git clone https://github.com/caduhigueras/arch-dotfiles ~/.local/share/arch-dotfiles/
+git clone https://github.com/caduhigueras/arch-dotfiles.git ~/.local/share/arch-dotfiles/
 
 cd ~/.local/share/arch-dotfiles/
 
