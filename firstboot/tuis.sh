@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --needed --noconfirm impala bluetui wiremix btop lazygit
+sudo pacman -S --needed --noconfirm impala bluetui wiremix btop lazygit ncdu yazi
 
 git clone git@github.com:caduhigueras/kr_calendar_tui.git ~/.local/share/kr-calendar-tui
 cd ~/.local/share/kr-calendar-tui
