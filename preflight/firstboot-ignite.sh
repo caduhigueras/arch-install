@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
 cp -a /root/arch-installer /mnt/opt/arch-installer
+arch-chroot /mnt bash -c 'find /opt/arch-installer -maxdepth 1 -type f -name "*.sh" -exec chmod 0755 {} +'
+arch-chroot /mnt chown -R root:root /opt/arch-installer
 
 arch-chroot /mnt bash -c 'cat > /etc/systemd/system/firstboot-setup.service << "EOF"
 [Unit]
 Description=Run first boot setup once
-After=network-online.target
-Wants=network-online.target
+After=network.target
+Wants=network.target
 [Service]
 Type=oneshot
 ExecStart=/opt/arch-installer/firstboot.sh
