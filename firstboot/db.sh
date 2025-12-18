@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --noconfirm --needed mariadb-clients postgresql-lib
+ # postgresql-lib TODO:
+sudo pacman -S --noconfirm --needed mariadb-clients

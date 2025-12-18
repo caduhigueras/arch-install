@@ -2,7 +2,7 @@
 
 sudo pacman -S --needed --noconfirm impala bluetui wiremix btop lazygit ncdu yazi
 
-git clone git@github.com:caduhigueras/kr_calendar_tui.git ~/.local/share/kr-calendar-tui
+git clone https://github.com/caduhigueras/kr_calendar_tui.git ~/.local/share/kr-calendar-tui
 cd ~/.local/share/kr-calendar-tui
 cargo build --release
 sudo cp target/release/kr_calendar_tui /usr/local/bin

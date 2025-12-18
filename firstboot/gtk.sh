@@ -7,6 +7,6 @@ git clone https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme /home/arch/Do
 cd /home/arch/Downloads/gtk-tokyonight/themes
 ./install.sh
 
-cd /opt/arch-install
+cd /opt/arch-installer
 
 gsettings set org.gnome.desktop.interface icon-theme "TokyoNight-SE"
