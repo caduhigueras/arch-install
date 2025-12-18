@@ -16,5 +16,6 @@ source /opt/arch-installer/firstboot/walker.sh
 source /opt/arch-installer/firstboot/tuis.sh
 source /opt/arch-installer/firstboot/neovim.sh
 
+source /opt/arch-installer/firstboot/dirbase.sh
 source /opt/arch-installer/firstboot/dotfiles.sh
 source /opt/arch-installer/firstboot/services.sh
