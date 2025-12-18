@@ -8,5 +8,5 @@ cd /home/arch/Downloads/qt-tokyonight
 mkdir -p ~/.config/Kvantum
 cp -r Kvantum-Tokyo-Night ~/.config/Kvantum/
 
-cd /opt/arch-install
+cd /opt/arch-installer
 
