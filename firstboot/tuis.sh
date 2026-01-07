@@ -7,4 +7,4 @@ cd ~/.local/share/kr-calendar-tui
 cargo build --release
 sudo cp target/release/kr_calendar_tui /usr/local/bin
 
-cd /opt/arch-install
+cd /opt/arch-installer
