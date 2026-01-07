@@ -15,13 +15,15 @@ Conflicts=getty@tty1.service
 [Service]
 Type=oneshot
 WorkingDirectory=/opt/arch-installer
-ExecStart=/opt/arch-installer/firstboot.sh
-StandardOutput=journal+console
-StandardError=journal+console
-TTYPath=/dev/console
+ExecStart=/bin/bash -lc '/opt/arch-installer/firstboot.sh'
+StandardInput=tty
+StandardOutput=tty
+StandardError=tty
+TTYPath=/dev/tty1
 TTYReset=yes
 TTYVHangup=yes
 TTYVTDisallocate=yes
+ExecStartPost=/usr/bin/systemctl start getty@tty1.service
 RemainAfterExit=yes
 
 [Install]
