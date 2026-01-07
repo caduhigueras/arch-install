@@ -7,8 +7,11 @@ arch-chroot /mnt chown -R root:root /opt/arch-installer
 arch-chroot /mnt bash -c 'cat > /etc/systemd/system/firstboot-setup.service << "EOF"
 [Unit]
 Description=Run first boot setup once
-After=network.target
-Wants=network.target
+After=network-online.target
+Wants=network-online.target
+Before=getty@tty1.service
+Conflicts=getty@tty1.service
+
 [Service]
 Type=oneshot
 WorkingDirectory=/opt/arch-installer
@@ -20,6 +23,7 @@ TTYReset=yes
 TTYVHangup=yes
 TTYVTDisallocate=yes
 RemainAfterExit=yes
+
 [Install]
 WantedBy=multi-user.target
 EOF
