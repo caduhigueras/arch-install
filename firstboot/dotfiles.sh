@@ -4,7 +4,7 @@ git clone https://github.com/caduhigueras/arch-dotfiles.git ~/.local/share/arch-
 
 cd ~/.local/share/arch-dotfiles/
 
-mv ~/.config/hypr ~/files/backups
+rm -rf ~/.config/hypr
 
 stow -t "$HOME" config
 stow -t "$HOME" applications
