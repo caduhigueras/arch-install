@@ -7,8 +7,8 @@ arch-chroot /mnt chown -R root:root /opt/arch-installer
 arch-chroot /mnt bash -c 'cat > /etc/systemd/system/firstboot-setup.service << "EOF"
 [Unit]
 Description=Run first boot setup once
-After=network.target
-Wants=network.target
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 User=arch
@@ -23,6 +23,9 @@ TTYReset=yes
 TTYVHangup=yes
 TTYVTDisallocate=yes
 RemainAfterExit=yes
+Restart=on-failure
+RestartSec=10
+StartLimitIntervalSec=0
 
 [Install]
 WantedBy=multi-user.target
