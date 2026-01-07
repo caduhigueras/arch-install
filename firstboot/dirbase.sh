@@ -4,6 +4,8 @@ mkdir -p ~/app/dev
 mkdir -p ~/app/tools
 mkdir -p ~/app/tuis
 mkdir -p ~/app/shell
+mkdir -p ~/app/magento
+mkdir -p ~/app/software
 mkdir -p ~/app/sites
 mkdir -p ~/files/backups/
 mkdir -p ~/files/db/
