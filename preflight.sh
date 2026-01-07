@@ -8,4 +8,4 @@ source ./preflight/firstboot-ignite.sh
 
 umount -l /mnt/boot
 umount -l /mnt
-# reboot now
+reboot now
