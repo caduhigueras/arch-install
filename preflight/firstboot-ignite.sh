@@ -15,6 +15,7 @@ User=arch
 Group=arch
 Type=oneshot
 WorkingDirectory=/opt/arch-installer
+ExecStartPre=/bin/bash -c 'until getent hosts deb.debian.org >/dev/null 2>&1; do sleep 2; done'
 ExecStart=/opt/arch-installer/firstboot.sh
 StandardOutput=journal+console
 StandardError=journal+console
@@ -23,9 +24,6 @@ TTYReset=yes
 TTYVHangup=yes
 TTYVTDisallocate=yes
 RemainAfterExit=yes
-Restart=on-failure
-RestartSec=10
-StartLimitIntervalSec=0
 
 [Install]
 WantedBy=multi-user.target

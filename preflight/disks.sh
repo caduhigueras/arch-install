@@ -48,6 +48,8 @@ prompt_password() {
   done
 }
 
+clear
+
 # Ask username and password
 USERNAME="$(gum input --prompt "Choose your username: " --placeholder "e.g. arch")"
 ROOT_PW="$(prompt_password root)"

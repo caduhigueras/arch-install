@@ -4,3 +4,5 @@ sudo systemctl enable sddm
 sudo systemctl enable bluetooth
 sudo systemctl enable cronie.service
 sudo systemctl start cronie.service
+
+sudo reboot now
