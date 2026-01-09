@@ -14,6 +14,11 @@ source /opt/arch-installer/firstboot/rust.sh
 source /opt/arch-installer/firstboot/walker.sh
 source /opt/arch-installer/firstboot/tuis.sh
 source /opt/arch-installer/firstboot/neovim.sh
+source /opt/arch-installer/firstboot/jetbrains.sh
+source /opt/arch-installer/firstboot/localsend.sh
+source /opt/arch-installer/firstboot/obsidian.sh
+source /opt/arch-installer/firstboot/timeshift.sh
+source /opt/arch-installer/firstboot/vpn.sh
 
 source /opt/arch-installer/firstboot/dirbase.sh
 source /opt/arch-installer/firstboot/dotfiles.sh

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git clone git@github.com:caduhigueras/obsidian.git /home/arch/.local/share/obsidian
+sudo pacman -S --noconfirm --needed obsidian
 
 #todo add obsidian to bin
 sudo touch /usr/local/bin/obsidian_sync
