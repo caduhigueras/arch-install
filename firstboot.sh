@@ -18,4 +18,5 @@ source /opt/arch-installer/firstboot/neovim.sh
 source /opt/arch-installer/firstboot/dirbase.sh
 source /opt/arch-installer/firstboot/dotfiles.sh
 source /opt/arch-installer/firstboot/sddm.sh
+source /opt/arch-installer/firstboot/bashrc.sh
 source /opt/arch-installer/firstboot/services.sh
