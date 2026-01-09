@@ -3,26 +3,26 @@
 cat <<'EOF' >> ~/.bashrc
 
 ## Custom aliases
-alias gomdocker='cd /$HOME/app/docker-magento-setup'
-alias cda='cd /$HOME/.local/share/arch-dotfiles/'
-alias cdapp='cd /$HOME/app/'
-alias cdb='cd /$HOME/files/backups/'
-alias cdd='cd /$HOME/app/hubspot/private_apps/prod/hs-ui-extensions/deal_matrix/'
-alias cddoc='cd /$HOME/Documents/'
-alias cddow='cd /$HOME/Downloads/'
-alias cdf='cd /$HOME/files/'
-alias cdi='cd /$HOME/app/dev/arch-install/'
-alias cdm='cd /$HOME/app/magento/'
+alias gomdocker='cd $HOME/app/docker-magento-setup'
+alias cda='cd $HOME/.local/share/arch-dotfiles/'
+alias cdapp='cd $HOME/app/'
+alias cdb='cd $HOME/files/backups/'
+alias cdd='cd $HOME/app/hubspot/private_apps/prod/hs-ui-extensions/deal_matrix/'
+alias cddoc='cd $HOME/Documents/'
+alias cddow='cd $HOME/Downloads/'
+alias cdf='cd $HOME/files/'
+alias cdi='cd $HOME/app/dev/arch-install/'
+alias cdm='cd $HOME/app/magento/'
 alias cdm2='docker exec -it php-fpm bash'
-alias cdo='cd /$HOME/Documents/Obsidian\ Vault/'
-alias cds='cd /$HOME/app/sites'
-alias cdsc='cd /$HOME/files/scratches/'
+alias cdo='cd $HOME/Documents/Obsidian\ Vault/'
+alias cds='cd $HOME/app/sites'
+alias cdsc='cd $HOME/files/scratches/'
 alias showtime='date +"%T"'
 
 
 ## Starting main Magento Docker
 m2start() {
-    cd /$HOME/app/docker-magento-setup/
+    cd $HOME/app/docker-magento-setup/
     docker compose up -d
 }
 
@@ -51,20 +51,20 @@ splitCsv() {
 
 showmycmds() {
     echo "########## ALIASES ##########"
-    echo "gomdocker => cd /$HOME/app/docker-magento-setup/"
-    echo "cda => cd /$HOME/.local/share/arch-dotfiles/"
-    echo "cdapp => cd /$HOME/app/"
-    echo "cdb => cd /$HOME/files/backups/"
-    echo "cdd => cd /$HOME/app/hubspot/private_apps/prod/hs-ui-extensions/deal_matrix/"
-    echo "cddoc => cd /$HOME/Documents/"
-    echo "cddow => cd /$HOME/Downloads/"
-    echo "cdf => cd /$HOME/files/"
-    echo "cdi => cd /$HOME/app/dev/arch-install/"
-    echo "cdm => cd /$HOME/app/magento/"
+    echo "gomdocker => cd $HOME/app/docker-magento-setup/"
+    echo "cda => cd $HOME/.local/share/arch-dotfiles/"
+    echo "cdapp => cd $HOME/app/"
+    echo "cdb => cd $HOME/files/backups/"
+    echo "cdd => cd $HOME/app/hubspot/private_apps/prod/hs-ui-extensions/deal_matrix/"
+    echo "cddoc => cd $HOME/Documents/"
+    echo "cddow => cd $HOME/Downloads/"
+    echo "cdf => cd $HOME/files/"
+    echo "cdi => cd $HOME/app/dev/arch-install/"
+    echo "cdm => cd $HOME/app/magento/"
     echo "cdm2 => docker exec -it php-fpm bash"
-    echo "cdo => cd /$HOME/.local/share/obsidian"
-    echo "cds =>cd /$HOME/app/sites"
-    echo "cdsc => cd /$HOME/files/scratches/"
+    echo "cdo => cd $HOME/.local/share/obsidian"
+    echo "cds =>cd $HOME/app/sites"
+    echo "cdsc => cd $HOME/files/scratches/"
     echo "showtime => show current time in the terminal"
     echo ""
     echo ""
