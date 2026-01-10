@@ -32,13 +32,16 @@ esac
 
 echo "Setting timezones and locales"
 arch-chroot /mnt pacman -S --noconfirm --needed "$UCODE_PKG"
-#arch-chroot /mnt timedatectl set-timezone Europe/Madrid
-arch-chroot /mnt ln -sf "/usr/share/zoneinfo/$TZ" /etc/localtime
+arch-chroot /mnt timedatectl set-timezone "$TZ"
+# arch-chroot /mnt ln -sf "/usr/share/zoneinfo/$TZ" /etc/localtime
 arch-chroot /mnt hwclock --systohc
 arch-chroot /mnt timedatectl set-ntp true
+arch-chroot /mnt echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+arch-chroot /mnt echo "es_ES.UTF-8 UTF-8" >> /etc/locale.gen
 arch-chroot /mnt sed -i 's/^#\?\(en_US\.UTF-8 UTF-8\)$/\1/' /etc/locale.gen
 arch-chroot /mnt locale-gen
-arch-chroot /mnt bash -c 'echo LANG=en_GB.UTF-8 > /etc/locale.conf'
+arch-chroot /mnt bash -c 'echo LANG=en_US.UTF-8 > /etc/locale.conf'
+arch-chroot /mnt bash -c 'echo LC_TIME=es_ES.UTF-8 >> /etc/locale.conf'
 
 echo "Setting users and hosts"
 arch-chroot /mnt bash -c 'echo ArchLinux > /etc/hostname'
