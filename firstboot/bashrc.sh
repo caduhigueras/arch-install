@@ -62,6 +62,7 @@ showmycmds() {
     echo "cdi => cd $HOME/app/dev/arch-install/"
     echo "cdm => cd $HOME/app/magento/"
     echo "cdm2 => docker exec -it php-fpm bash"
+    echo "cdn => cd $HOME/.config/nvim"
     echo "cdo => cd $HOME/.local/share/obsidian"
     echo "cds =>cd $HOME/app/sites"
     echo "cdsc => cd $HOME/files/scratches/"
