@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-echo "Sorting mirrors bsaed on location"
+echo "Sorting mirrors based on location"
 pacman -Syy
-pacman -S --noconfirm --needed reflector
+pacman -S --noconfirm --needed python reflector
 reflector --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
 
 echo "Install base system"
