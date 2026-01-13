@@ -9,7 +9,7 @@ sudo systemctl disable firstboot-setup
 
 # sudo rm -rf /etc/sudoers.d/99*
 
-cat > /etc/systemd/system/teams-notifications.service << "EOF"
+sudo cat > /etc/systemd/system/teams-notifications.service << "EOF"
 [Unit]
 Description=Teams notification listener
 
@@ -20,9 +20,9 @@ Restart=always
 [Install]
 WantedBy=default.target
 EOF
-systemctl enable teams-focus-reset.service
+sudo systemctl enable teams-focus-reset.service
 
-cat > /etc/systemd/system/teams-notifications.service << "EOF"
+sudo cat > /etc/systemd/system/teams-focus-reset.service << "EOF"
 [Unit]
 Description=Reset Teams unread counter on focus
 
@@ -33,6 +33,6 @@ Restart=always
 [Install]
 WantedBy=default.target
 EOF
-systemctl enable teams-focus-reset.service
+sudo systemctl enable teams-focus-reset.service
 
 sudo reboot now
