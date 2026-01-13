@@ -22,6 +22,7 @@ source /opt/arch-installer/firstboot/vpn.sh
 
 source /opt/arch-installer/firstboot/dirbase.sh
 source /opt/arch-installer/firstboot/dotfiles.sh
+source /opt/arch-installer/firstboot/themes.sh
 source /opt/arch-installer/firstboot/fonts.sh
 source /opt/arch-installer/firstboot/sddm.sh
 source /opt/arch-installer/firstboot/bashrc.sh
