@@ -2,4 +2,5 @@
 
 sudo pacman -S --needed --noconfirm nodejs npm
 
-# TODO: install nvm
+npm i -g @hubspot/cli
+npm i -g typescript
