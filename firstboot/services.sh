@@ -34,4 +34,5 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now teams-notifications.service
 sudo systemctl enable --now teams-focus-reset.service
 
-sudo sh -c "sudo rm -rf /etc/sudoers.d/99-$USER-nopasswd && reboot now"
+#sudo sh -c "sudo rm -rf /etc/sudoers.d/99-$USER-nopasswd && reboot now"
+sudo reboot now
