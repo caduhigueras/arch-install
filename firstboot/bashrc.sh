@@ -83,5 +83,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export EDITOR="nvim"
 
+export PATH="$HOME/.npm-global/bin:$PATH"
+
 EOF
 
