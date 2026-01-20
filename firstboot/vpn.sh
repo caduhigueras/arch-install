@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --needed --noconfirm openvpn openfortivpn
+sudo pacman -S --needed --noconfirm openvpn openfortivpn networkmanager network-manager-applet nm-connection-editor networkmanager-openvpn
 
 sudo tee /etc/openfortivpn/config > /dev/null <<'EOF'
 host = 
