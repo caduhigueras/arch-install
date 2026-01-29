@@ -11,4 +11,4 @@ cd ~/.local/share/yay
 makepkg -si --noconfirm --needed
 
 # cronie 
-sudo pacman -S --noconfirm --needed 7zip bat blueman bluez bluez-utils cairo cmake cpio cronie evince feh ffmpeg gnome-calculator gum lsof make mako meson nautilus ntfs-3g nwg-look openssh openssl poppler-glib protobuf pv reflector ripgrep rsync satty sof-firmware stow tar unzip uwsm waybar wget wl-clipboard xclip zip
+sudo pacman -S --noconfirm --needed 7zip bat blueman bluez bluez-utils cairo cmake cpio cronie evince feh ffmpeg gnome-calculator gum lsof make mako meson nautilus ntfs-3g nwg-look openssh openssl poppler-glib protobuf pv reflector ripgrep rsync satty socat sof-firmware stow tar unzip uwsm waybar wget wl-clipboard xclip zip
