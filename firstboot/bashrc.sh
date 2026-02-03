@@ -85,5 +85,8 @@ export EDITOR="nvim"
 
 export PATH="$HOME/.npm-global/bin:$PATH"
 
+[[ -r /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 EOF
 
