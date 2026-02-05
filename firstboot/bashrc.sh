@@ -49,6 +49,10 @@ splitCsv() {
     done
 }
 
+xml_parse() {
+    xmllint --format $1 | bat --language=xml
+}
+
 showmycmds() {
     echo "########## ALIASES ##########"
     echo "gomdocker => cd $HOME/app/docker-magento-setup/"
