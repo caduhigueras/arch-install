@@ -4,6 +4,7 @@ cat <<'EOF' >> ~/.bashrc
 
 export STARSHIP_CONFIG=/home/arch/.config/starship/starship.toml
 eval "$(starship init bash)"
+eval "$(atuin init bash)"
 
 ## Custom aliases
 alias gomdocker='cd $HOME/app/docker-magento-setup'

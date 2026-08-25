@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --needed --noconfirm impala bluetui wiremix btop lazygit ncdu yazi lazydocker starship
+sudo pacman -S --needed --noconfirm impala bluetui wiremix btop lazygit ncdu yazi lazydocker starship atuin
 yay -S --noconfirm --needed lazysql
 
 git clone https://github.com/caduhigueras/kr_calendar_tui.git ~/.local/share/kr-calendar-tui

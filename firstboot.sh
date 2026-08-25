@@ -27,3 +27,4 @@ source /opt/arch-installer/firstboot/fonts.sh
 source /opt/arch-installer/firstboot/sddm.sh
 source /opt/arch-installer/firstboot/bashrc.sh
 source /opt/arch-installer/firstboot/services.sh
+source /opt/arch-installer/firstboot/vm.sh
