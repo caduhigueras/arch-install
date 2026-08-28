@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo pacman -S --noconfirm --needed neovim
+sudo pacman -S --noconfirm --needed neovim tree-sitter-cli
 # Delete old files if exist
 rm -rf ~/.config/nvim/
 rm -rf ~/.local/share/nvim/
