@@ -3,6 +3,7 @@
 cat <<'EOF' >> ~/.bashrc
 
 export STARSHIP_CONFIG=/home/arch/.config/starship/starship.toml
+export INPUTRC=/home/arch/.config/readline/inputrc
 eval "$(starship init bash)"
 eval "$(atuin init bash)"
 
